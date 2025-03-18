@@ -2,8 +2,8 @@
 
 {% block content %}
     <form action="{{ url_for('add') }}" method="POST">
-        <div style="display: flex; gap: 10px;">
-            <input type="text" name="task" placeholder="Add a new task..." required autofocus>
+        <div style="display: flex; gap: 0.75rem;">
+            <input type="text" name="task" placeholder="What needs to be done?" required autofocus>
             <button type="submit">Add</button>
         </div>
     </form>
@@ -28,6 +28,6 @@
             {% endfor %}
         </ul>
     {% else %}
-        <p>No tasks yet. Add one above!</p>
+        <p style="color: var(--text-secondary); text-align: center; padding: 1rem 0;">No tasks yet. Add one above!</p>
     {% endif %}
 {% endblock %} 
