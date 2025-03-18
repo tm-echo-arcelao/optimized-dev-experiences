@@ -1,0 +1,10 @@
+[tools]
+uv = "0.6.7"
+
+[tasks.dev]
+description = "Activate the Flask dev server"
+run = "uv run python app.py"
+
+[tasks.test]
+description = "Runs the test suite"
+run = "uv run pytest"
