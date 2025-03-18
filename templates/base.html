@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Todo App</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .task-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Flask Todo App</h1>
+        </header>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+        <footer>
+            <p>Simple Todo App built with Flask</p>
+        </footer>
+    </main>
+</body>
+</html> 
